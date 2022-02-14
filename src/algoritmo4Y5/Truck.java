@@ -14,7 +14,7 @@ public class Truck extends Vehicle{
 
     }
 
-    public void showCarTruck(){
+    public void showTruck(){
         System.out.println("El trailer: "+trailer);
 
     }

@@ -97,4 +97,16 @@ Scanner in = new Scanner(System.in);
     public void setEnrollmentDate(Date enrollmentDate) {
         this.enrollmentDate = enrollmentDate;
     }
+
+    public boolean isPassengerPresence() {
+        return passengerPresence;
+    }
+
+    public String getTrack() {
+        return track;
+    }
+
+    public void setTrack(String track) {
+        this.track = track;
+    }
 }
