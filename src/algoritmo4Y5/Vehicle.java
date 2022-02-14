@@ -5,6 +5,14 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
+/**
+ * [Esta es la super clase de aqui partimos atributos  y metodos
+ *
+ * @version [I
+ *           ej: 1.04.05 2022-02-12,
+ *
+ * @author [Yeferson Valencia, alejandro.yandd@gmail.com]
+ */
 public class Vehicle {
 
     private int numberPassengers;
@@ -15,6 +23,13 @@ public class Vehicle {
 
 Scanner in = new Scanner(System.in);
 
+    /**
+     * [ingresa los datos de los vehiculos
+     *...;
+     * @throws Exception
+     *
+     * @author [Yeferson Valencia, alejandro.yandd@gmail.com
+     */
   public void enterVehicle(){
 
       System.out.println("ingresar numero de pasajeros: ");
@@ -36,10 +51,15 @@ Scanner in = new Scanner(System.in);
       System.out.println("ingresar pista o medio por el que se desplaza: ");
       track=in.nextLine();
 
-      enrollmentDate = parseDateBirthPersons();
+      enrollmentDate = parseDateBirthPersons();// llamo el metodo de cracion de fechas de matricula
 
   }
-
+    /**
+     * [metodo para poder asignarles las fechas de matrucula     *...;
+     * @throws Exception
+     *
+     * @author [Yeferson Valencia, alejandro.yandd@gmail.com
+     */
     public static Date parseDateBirthPersons(){
         Scanner in = new Scanner(System.in);
         System.out.println("ingresar fecha (dd/MM/yyyy) ");
@@ -56,6 +76,13 @@ Scanner in = new Scanner(System.in);
         return finalDate;
     }
 
+    /**
+     * [muestro los datos ingresados de los vehiculos
+     *...;
+     * @throws Exception
+     *
+     * @author [Yeferson Valencia, alejandro.yandd@gmail.com
+     */
     public void showVehicle(){
         System.out.println("el numero pasajeros : "+passengerPresence);
         System.out.println("hay pasajeros : "+passengerPresence);
@@ -65,7 +92,13 @@ Scanner in = new Scanner(System.in);
 
     }
 
-
+    /**
+     * todos los getter y setter para poder modificar o acceder a los datos
+     *...;
+     * @throws Exception
+     *
+     * @author [Yeferson Valencia, alejandro.yandd@gmail.com
+     */
     public int getNumberPassengers() {
         return numberPassengers;
     }

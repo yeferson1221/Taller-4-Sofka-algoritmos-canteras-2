@@ -1,5 +1,18 @@
 package algoritmo4Y5;
 
+/**
+ * [Esta es la clase main contiene el el iniciar el aplicativo
+ * tiene los condicionales para  cuando el usuario ingrese  los datos del vehiculo
+ * este inteligente mente pueda saber que vehiculo es creado
+ *
+ * ejemplo si el usuario ingresa  los datos  este mediante condicionales va filtrando hasta darse cuenta que vehiulo es.
+ * E instancia ese objeto,
+ *
+ * @version [I
+ *           ej: 1.04.05 2022-02-12,
+ *
+ * @author [Yeferson Valencia, alejandro.yandd@gmail.com]
+ */
 public class Main {
     public static void main(String[] args) {
         Vehicle vehicle = new Vehicle();
@@ -18,6 +31,7 @@ public class Main {
             }else if(vehicle.getNumberPassengers()== 1 && vehicle.getNumberWheels()==2){
                 Bicycle bicycle = new Bicycle();
                 bicycle.enterBicycle();
+
                 System.out.println("La bici:");
                 bicycle.showCarBicycle();
             }else if(vehicle.getTrack()=="mar" || vehicle.getNumberWheels()>=0){

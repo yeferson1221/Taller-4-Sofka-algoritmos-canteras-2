@@ -2,11 +2,9 @@ package algorithm2;
 
 public class MainTest1 {
     /**
-     * [Este metodo nos permite calcular la fuerza gravitacional entre los dos planetas planetas
-     * con la formula  // F = G*(m1*m2)/d^2
-     * @param planet1
-     * @param planet2
-     * @return distBetweenPlanets
+     * [una clase puede tener  solo un metodo main
+     * esta es la que da el inicio al programa
+     * no se puede iniciar otras al tiempo mientras esta se ejecutada
      *
      * @author [Yeferson Valencia, apellido y correo electrónico del autor.
      *
