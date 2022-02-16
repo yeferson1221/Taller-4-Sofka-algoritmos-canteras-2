@@ -30,9 +30,45 @@ public class ArraySort {
         }
     }
 
-    public  void printArray(){
+    public int[] printArray(){
         for(int i=0; i<numberList.length; i++){
             System.out.println(numberList[i]);
         }
+        return new int[0];
     }
+
+    public void quicksortList(int number[], int left, int right) {
+        System.out.println("QuickSort: ");
+
+        int list = number[left];
+        int i = left,j = right,c;
+
+        while (i < j) {
+            while (number[i] <= list && i < j)
+                i++;
+
+            while (number[j] > list)
+                j--;
+
+            if (i < j) {
+                c = number[i];
+                number[i] = number[j];
+               number[j] = c;
+            }
+        }
+
+        number[left] =number[j];
+        number[j] = list;
+
+        if (left < j - 1)
+            quicksortList(number, left, j - 1);
+
+        if (j + 1 < right)
+            quicksortList(number, j + 1, right);
+
+        for (int h = 0; h < number.length; h++) {
+            System.out.println(numberList[h] + " ");
+        }
+    }
+
 }
